@@ -99,4 +99,5 @@ def logout():
 def download():
     return send_from_directory(directory='static',path='files/secrets.pdf')
 
-
+if __name__ == '__main__':
+    app.run(debug=True)
